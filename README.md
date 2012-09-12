@@ -5,7 +5,7 @@ puppet-oxidce module
 
 OXID CE is a downloadable, free/libre e-commerce software. It provides you with a fully fledged e-commerce environment based on PHP.
 
-The work on this puppet module was heavily inspired by the puppet-piwik module. Thanks for this!
+The work on this puppet module was heavily inspired by the [puppet-piwik](https://github.com/piwik/puppet-piwik) module. Thanks for this!
 
 ### License: 
 GPL v3 or later
