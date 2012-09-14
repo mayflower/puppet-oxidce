@@ -37,7 +37,7 @@ class oxidce::db(
   # pre-create a database
   database { 'oxid':
     ensure   => present,
-    charset  => 'utf-8',
+    charset  => 'utf8',
     provider => 'mysql',
     require  => Class['mysql::server'],
   }
