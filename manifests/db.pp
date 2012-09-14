@@ -34,6 +34,14 @@ class oxidce::db(
     config_hash => { 'root_password' => $root_password }
   }
 
+  # pre-create a database
+  database { 'oxid':
+    ensure   => present,
+    charset  => 'utf-8',
+    provider => 'mysql',
+    require  => Class['mysql::server'],
+  }
+
   database_user { $username:
     ensure        => present,
     password_hash => mysql_password($password),
